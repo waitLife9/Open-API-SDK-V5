@@ -12,7 +12,6 @@ import com.okex.open.api.test.BaseTests;
  * @date 2018/7/04 18:23
  */
 public class AccountAPIBaseTests extends BaseTests {
-
     public APIConfiguration config() {
         APIConfiguration config = new APIConfiguration();
 
@@ -21,9 +20,9 @@ public class AccountAPIBaseTests extends BaseTests {
         config.setDomain("https://www.okx.com");
 
 
-        config.setApiKey("");
-        config.setSecretKey("");
-        config.setPassphrase("");
+        config.setApiKey("70a011d4-f6dc-49c4-9c93-825ed43ce8ca");
+        config.setSecretKey("D75CAD01F4D16915144B1CA2AA8A2572");
+        config.setPassphrase("Key241023!");
 
         //请求模拟盘的接口需要传入1，否则传入0
         //if you want to request the endpoint in demo trading,please input 1,otherwise,please input 0

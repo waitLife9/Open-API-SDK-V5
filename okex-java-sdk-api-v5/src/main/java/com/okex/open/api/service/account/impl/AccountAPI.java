@@ -199,7 +199,7 @@ public interface AccountAPI {
     Call<JSONObject> getBorrowingLimit();
 
     @GET("/api/v5/account/fixed-loan/borrowing-quote")
-    Call<JSONObject> getBorrowingQuote(@Query("type")String type, @Query("ccy")String ccy, @Query("amt")String amt, @Query("maxRate")String maxRate, @Query("term")String term,@Query("ordId") String ordId);
+    Call<JSONObject> getBorrowingQuote(@Query("type")String type, @Query("ccy")String ccy, @Query("amt")String amt, @Query("maxRate")String maxRate, @Query("term")String term);
 
     @POST("/api/v5/account/fixed-loan/borrowing-order")
     Call<JSONObject> borrowingOrder(@Body JSONObject parseObject);

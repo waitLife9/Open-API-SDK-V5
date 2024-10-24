@@ -53,6 +53,8 @@ public class APIHttpClient {
      */
     public OkHttpClient client() {
         final OkHttpClient.Builder clientBuilder = new OkHttpClient.Builder();
+        //设置代理
+        clientBuilder.proxy(new Proxy(Proxy.Type.SOCKS, new InetSocketAddress("127.0.0.1", 7890)));
         clientBuilder.connectTimeout(this.config.getConnectTimeout(), TimeUnit.SECONDS);
         clientBuilder.readTimeout(this.config.getReadTimeout(), TimeUnit.SECONDS);
         clientBuilder.writeTimeout(this.config.getWriteTimeout(), TimeUnit.SECONDS);

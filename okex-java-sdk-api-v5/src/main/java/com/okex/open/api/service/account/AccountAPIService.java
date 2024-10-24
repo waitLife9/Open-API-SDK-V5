@@ -132,7 +132,7 @@ public interface AccountAPIService {
 
     JSONObject getBorrowingLimit();
 
-    JSONObject getBorrowingQuote(String type, String ccy, String amt, String maxRate, String term, String ordId);
+    JSONObject getBorrowingQuote(String type, String ccy, String amt, String maxRate, String term);
 
     JSONObject borrowingOrder(AccountBorrowRepay borrowingOrder);
 

@@ -280,8 +280,8 @@ public class AccountAPIServiceImpl implements AccountAPIService {
     }
 
     @Override
-    public JSONObject getBorrowingQuote(String type, String ccy, String amt, String maxRate, String term, String ordId) {
-        return this.client.executeSync(this.api.getBorrowingQuote(type, ccy, amt, maxRate, term, ordId));
+    public JSONObject getBorrowingQuote(String type, String ccy, String amt, String maxRate, String term) {
+        return this.client.executeSync(this.api.getBorrowingQuote(type, ccy, amt, maxRate, term));
     }
 
     @Override

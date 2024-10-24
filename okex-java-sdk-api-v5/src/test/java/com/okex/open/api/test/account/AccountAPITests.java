@@ -561,7 +561,10 @@ public class AccountAPITests extends  AccountAPIBaseTests {
      */
     @Test
     public void getBorrowingQuote(){
-        JSONObject result = this.accountAPIService.getBorrowingQuote("","","","","","");
+
+        JSONObject result = this.accountAPIService.getBorrowingQuote("normal","USDT","20000","0.6","90D");
+        // 24/10/23 18:55
+        // {"msg":"","code":"0","data":[{"ccy":"USDT","estAvailBorrow":"2000","estInterest":"8.86027397","estRate":"0.0539","penaltyInterest":"","term":"30D","ts":"1729681027673"}]}
         toResultString(LOG, "result", result);
     }
     /**
